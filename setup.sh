@@ -6,7 +6,7 @@ echo '{ "features": { "buildkit": true } }' | sudo tee /etc/docker/daemon.json
 
 sudo systemctl restart docker
 
-targetdir=$HOME/alpha
+targetdir=$HOME/.alpha
 rm -rf ${targetdir}
 
 mkdir -p $targetdir 
@@ -27,7 +27,7 @@ temp_dir="$(mktemp -d)"
 cd $temp_dir
 curl -L -o traefik.tar.gz https://github.com/containous/traefik/releases/download/v2.2.8/traefik_v2.2.8_linux_amd64.tar.gz
 tar -zxvf traefik.tar.gz
-cp  traefik $HOME/alpha/traefik
+cp  traefik $targetdir/traefik
 
 
 cd $workdir
