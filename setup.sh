@@ -29,6 +29,7 @@ curl -L -o traefik.tar.gz https://github.com/containous/traefik/releases/downloa
 tar -zxvf traefik.tar.gz
 cp  traefik $targetdir/traefik
 
+sudo curl -o /opt/plantuml.jar https://jztkft.dl.sourceforge.net/project/plantuml/plantuml.jar
 
 cd $workdir
 
