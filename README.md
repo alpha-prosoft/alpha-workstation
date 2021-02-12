@@ -12,7 +12,7 @@ Checkout this project and run:
 To login to git you need to run
 
 ```
-~/alpha/user-login.sh
+~/.alpha/user-login.sh
 ```
 
 ## Background
